@@ -1,0 +1,106 @@
+﻿.logo{
+    height:100px;
+    width:80%;
+    margin:0 auto;
+}
+.logo img {
+    height:70px;
+    margin-top: 15px;
+}
+.maincenter{
+    height: 590px;
+    width:100%;
+    background: #E0E4F0;
+    overflow: hidden;
+    background-image: url("../img/loginbg.jpg");
+    background-size: cover;
+}
+.inmain{
+    width:80%;
+    height:100%;
+    margin:0 auto;
+}
+.loginbox{
+    width:420px;
+    height:520px;
+    background: #fff;
+    margin-top: 35px;
+    float: right;
+}
+.loginbox .head{
+    width:100%;
+    height:80px;
+    text-align: center;
+    padding: 24px 0;
+    box-sizing: border-box;
+}
+.loginbox .head p{
+    font-size: 24px;
+    width:100%;
+    height:100%;
+    text-align: center;
+    color:#f56600;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.loginbox .inputlogin{
+    padding:0 40px;
+    margin-top: 20px;
+}
+.loginbox .inputlogin input,.loginbox .inputlogin button{
+    width: 100%;
+    height:48px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.loginbox .inputlogin button{
+    margin-top: 15px;
+    border:none;
+    outline: none;
+    background:#f56600 ;
+    color:#fff;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.loginbox .inputlogin button.registerbutton{
+    border:1px solid #666 ;
+    background: none;
+    color:#666
+}
+.loginbox .inputlogin button.registerbutton:hover{
+    border:1px solid #f56600 ;
+    background: none;
+    color:#f56600
+}
+.loginbox .inputlogin button:hover{
+    background: #ff9900;
+    transition: background 0.4s linear;
+}
+
+.loginbox .inputlogin .forget{
+    color:#999;
+    float: right;
+    line-height: 26px;
+}
+
+.footer {
+    padding:20px 0;
+    width: 100%;
+    margin-top: 15px;
+}
+.footer .footer_about .about_link {
+    text-align:center;
+    margin-bottom: 12px;
+    color:#757575
+}
+.footer .footer_about .about_link a{
+    color:#757575
+}
+.footer .footer_about .about_copyright {
+    font-size: 12px;
+    text-align: center;
+}
+.footer .footer_about .about_copyright span{
+    color:#757575
+}
