@@ -5,47 +5,119 @@
     <title>故障报修</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/repair.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_743979_muiet3dp5f.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.step.min.js"></script>
+    <script src="js/repair.js"></script>
 </head>
+
 <body>
-<div class="header">
-    <div class="headerin">
-        <div class="left">
-            <img src="img/logo.png" alt="">
-        </div>
-        <div class="right">
-            <ul class="nav">
-                <li>
-                    <a href="">
-                        <p>服务</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <p>产品</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <p>关于我们</p>
-                    </a>
-                </li>
-            </ul>
-            <div class="login">
-                <button onClick="login()">登录</button>
-                <button onClick="register()">注册</button>
+    <div class="header">
+        <div class="headerin">
+            <div class="left">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul class="nav">
+                    <li>
+                        <a href="index.html">
+                            <p>服务</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>产品</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>关于我们</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <button onclick="location.href='login.html'">登录</button>
+                    <button onclick="location.href='register.html'">注册</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div style="height:30px;line-height: 30px;width:80%;margin:0 auto">
-    <a href="">首页</a>  / <a href="">故障报修</a>
-</div>
-<!--<div class="banner">-->
-    <!--<ul class="img">-->
-        <!--<li>-->
-            <!--&lt;!&ndash;<img src="img/banner.jpg" alt="">&ndash;&gt;-->
-        <!--</li>-->
-    <!--</ul>-->
-<!--</div>-->
+    <div style="height:30px;line-height: 30px;width:80%;margin:0 auto">
+        <a href="index.html">首页</a>  / <a href="">故障报修</a>
+    </div>
+    <div class="mainbox">
+        <div id="step"></div>
+        <ul class="repairbox">
+            <li class="visible">
+                <h3 class="retitle">维修类型</h3>
+                <div class="typebox">
+                    <button class="type" value="meter">表计</button>
+                    <button class="type" value="system">软件</button>
+                </div>
+                <h3></h3>
+            </li>
+            <li>
+                <div class="meter_box">
+                    <h3 class="retitle">表号</h3>
+                    <div class="meterno">
+                        <span>请输入表号</span>：
+                        <input type="text">
+                    </div>
+                    <h3 class="retitle">故障选择</h3>
+                    <div class="breakdown">
+                        <button>阀门无法开启</button>
+                        <button>充值提示错误</button>
+                        <button>机械部分不计量</button>
+                        <button>电子部分不计量</button>
+                        <button>液晶付费查看</button>
+                        <button>无任何反应</button>
+                        <button>其他</button>
+                    </div>
+                    <h3 class="retitle">故障描述</h3>
+                    <div class="jianju">
+                        <textarea name="" id="meterbreakinput" cols="120" rows="3" placeholder="请输入详细描述"></textarea>
+                    </div>
+                </div>
+                <div class="system_box">
+                    <h3 class="retitle">选择软件类型</h3>
+                    <div class="software">
+                        <button>LAPIS</button>
+                        <button>Web LAPIS</button>
+                        <button>WalkBy APP</button>
+                        <button>售水APP</button>
+                    </div>
+                    <h3 class="retitle">热门问题</h3>
+                    <div class="hotfaq">
+                        <a href="javascript:;">打不开软件</a>
+                        <a href="javascript:;">点什么没反应</a>
+                        <a href="javascript:;">返回按钮不管用</a>
+                    </div>
+                    <h3 class="retitle">需要提交审核</h3>
+                    <div class="jianju">
+                        <textarea name="" id="softbreakinput" cols="120" rows="3" placeholder="请输入详细描述"></textarea>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="success">
+                    <div>
+                        <span class="iconfont icon-icon" style="color:#19be6b;font-size: 60px;"></span>
+                    </div>
+                    <div>
+                        <p>申请成功！请耐心等待</p>
+                        <p>温馨提示，工作人员会在48小时内审核并做出响应，届时会尽快通知您，请您耐心等待</p>
+                    </div>
+                    <div>
+                        <button>查看服务详情</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="btns">
+            <button id="prevBtn" class="Btn">上一步</button>
+            <button id="nextBtn" class="Btn">下一步</button>
+        </div>
+    </div>
+
 </body>
 </html>

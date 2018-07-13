@@ -193,9 +193,15 @@ p.title{
     left:220px;
     right:0;
     top:0;
-    height:600px;
+    height:500px;
     box-sizing: border-box;
-    /*background: #EFF7FA;*/
+    overflow: auto;
+}
+.qa{
+    display: none;
+}
+.qa.selected{
+    display: block;
 }
 .qa li{
     margin-bottom: 12px;

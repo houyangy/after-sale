@@ -72,21 +72,224 @@ div.login{
 .login button:nth-child(2):hover{
     background: #FC9048;
 }
-/*banner*/
-.banner{
+
+/*主窗口*/
+.mainbox{
     width:80%;
-    height:235px;
-    overflow: hidden;
+    background: #fff;
     margin:0 auto;
+    padding:30px 60px 100px;
+    box-sizing: border-box;
 }
-.img{
-    width:100%;
-    height:100%;
+
+/*步骤条*/
+button.Btn {
+    display: inline-block;
+    width:100px;
+    padding: 6px 20px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #f56600;
+    outline: none;
 }
-.img li{
+#step {
+    margin-bottom: 60px;
+}
+
+.btns {
+    float: left;
+}
+
+.ui-step-wrap {
+    position: relative;
+}
+
+.ui-step-wrap .ui-step-bg,
+.ui-step-wrap .ui-step-progress {
+    height: 6px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.ui-step-wrap .ui-step-bg {
+    width: 100%;
+    background: #ddd;
+}
+
+.ui-step-wrap .ui-step-progress {
+    width: 0;
+    background: #19be6b;
+}
+
+.ui-step-wrap .ui-step {
+    position: relative;
+    z-index: 1;
+    list-style: none;
+}
+
+.ui-step-wrap .ui-step:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#step .ui-step-wrap .ui-step .ui-step-item {
+    float: left;
+    width:33%;
+}
+
+.ui-step-wrap .ui-step .ui-step-item div {
+    text-align: center;
+    color: #625454;
+}
+
+.ui-step-wrap .ui-step .ui-step-item .ui-step-item-num {
+    margin-top: 18px;
+}
+
+.ui-step-wrap .ui-step .ui-step-item .ui-step-item-num span {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #dad9d9;
+    line-height: 26px;
+}
+
+.ui-step-wrap .ui-step .ui-step-item.active .ui-step-item-num span {
+    color: #fff;
+    background: #19be6b;
+}
+
+.repairbox{
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+.repairbox li{
+    display: none;
+}
+.repairbox li.visible{
+    display: block;
+}
+.retitle{
+    border-left: 3px solid #ff6700;
+    height:40px;
+    line-height: 40px;
+    background: #EEEEEE;
+    padding:0 20px;
+    box-sizing: border-box;
+}
+.typebox{
+    text-align: center;
+    margin-top: 40px;
+}
+button.type{
+    height:50px;
+    width: 150px;
+    background: none;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-right: 40px;
+}
+button.type.selected{
+    border: 1px solid #ff6700;
+    color: #ff6700;
+}
+button.type:hover{
+    border: 1px solid #ff6700;
+    color: #ff6700;
+}
+.meterno{
+    height:100px;
+    line-height: 100px;
+}
+.meterno input {
+    height:35px;
+    width:260px;
+}
+.breakdown,.software{
+    margin-top: 20px;
+}
+.jianju{
+    margin-top: 20px;
+}
+.breakdown button,.software button{
+    width:150px;
+    height:35px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border:1px solid #ccc;
+    outline: none;
+}
+.breakdown button:hover .software button:hover{
+    border: 1px solid #ff6700;
+    color: #ff6700;
+}
+.breakdown button.selected,.software button.selected{
+    border: 1px solid #ff6700;
+    color: #ff6700;
+}
+.meter_box{
+    display: none;
+}
+.system_box{
+    display: none;
+}
+.hotfaq{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hotfaq a{
+    display: block;
+    line-height: 22px;
+    color:#008ddd;
+    font-size: 13px;
+}
+.success{
+    height:140px;
     width:100%;
-    height:100%;
-    background: url('../img/banner1.jpg') no-repeat center;
-    background-size: cover;
+    border: 1px solid #ccc;
+    border-left: 2px solid #19be6b;
+    padding: 40px 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+.success > div{
+    float: left;
+}
+.success > div:first-child{
+    margin-right: 20px;
+}
+.success > div:nth-child(2){
+    max-width: 65%;
+}
+.success > div:nth-child(2) p:nth-child(1){
+    font-size: 18px;
+    line-height: 32px;
+}
+.success > div:nth-child(2) p:nth-child(2){
+    color:#666;
+    line-height: 26px;
+}
+.success > div:nth-child(3){
+    float: right;
+    margin-left: 20px;
+    line-height: 60px;
+    padding-right:25px ;
+    box-sizing: border-box;
+}
+.success > div:nth-child(3) button{
+    background: #ff6700;
+    border: none;
+    color: #fff;
+    height:30px;
+    line-height: 30px;
+    padding: 0 10px;
 }
 
