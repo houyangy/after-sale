@@ -78,6 +78,68 @@ div.login{
     width:80%;
     background: #fff;
     margin:0 auto;
-    padding:30px 60px 100px;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 80px;
+}
+.background{
+    height:240px;
+    width:100%;
+    overflow: hidden;
+    background-image: url("../img/b1.jpg");
+    background-size: 100% 100%;
+}
+.img{
+    height:168px;
+    width:168px;
+    border-radius: 5px;
+    position: absolute;
+    left:20px;
+    top:200px;
+    background: url("../img/loginbgd.jpg") center;
+    border:5px solid #fff;
     box-sizing: border-box;
 }
+.infobox{
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-left: 174px solid transparent;
+}
+.infobox li{
+    box-sizing: border-box;
+    height:90px;
+    padding: 30px 0px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.infobox li:first-child{
+    border-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.infobox li p span{
+    float: left;
+}
+.infobox li p span.needhide{
+    color:#2d8cf0;
+    display:none;
+    margin-left: 45px;
+    cursor: pointer;
+}
+.infobox li:hover span.needhide{
+    display: inline;
+}
+.infobox li p span:first-child{
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width:140px;
+    margin:0;
+}
+.infobox li p.editpsd{
+    cursor: pointer;
+}
+.infobox li:hover p.editpsd{
+    color:#2d8cf0
+}
+

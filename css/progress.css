@@ -44,6 +44,37 @@
 .nav li a:hover p{
     color:#ff6700
 }
+.nav .selected a p{
+    color:#ff6700
+}
+div.login{
+    float: left;
+}
+.login button{
+    height:32px;
+    width:70px;
+    box-sizing: border-box;
+    border:1px solid #ff6700;
+    border-radius: 3px;
+    background: none;
+    color:#ff6700;
+    transition: all 0.4s ease;
+    outline:none;
+}
+.login button:hover{
+    border:none;
+    background: #ff6700;
+    color:#fff;
+}
+.login button:nth-child(2){
+    color:#fff;
+    border:none;
+    background: #ff6700;
+    transition: all 0.4s ease;
+}
+.login button:nth-child(2):hover{
+    background: #FC9048;
+}
 
 
 /*主窗口*/
@@ -72,8 +103,10 @@
 }
 .gongdan{
     margin-top: 10px;
-    height:250px;
+    height:140px;
     width:100%;
     border: 1px solid #ff6700;
     background: #fff;
+    padding:20px;
+    box-sizing: border-box;
 }

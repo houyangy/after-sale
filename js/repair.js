@@ -30,7 +30,6 @@ $(document).ready(function () {
     });
 
     $(".type").click(function (val,index) {
-        // console.log($(this).val());
         $(this).addClass("selected").siblings().removeClass("selected")
     })
     $(".breakdown button").click(function (val,index) {

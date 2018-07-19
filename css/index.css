@@ -44,6 +44,9 @@
 .nav li a:hover p{
     color:#ff6700
 }
+.nav .selected a p{
+    color:#ff6700
+}
 div.login{
     float: left;
 }
@@ -234,4 +237,10 @@ p.title{
 }
 .more:hover .line{
     width:60px;
+}
+footer{
+    margin-top: 30px;
+    height:250px;
+    width:100%;
+    background: #fff;
 }
